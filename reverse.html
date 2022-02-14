@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Reverse a number</title>
+</head>
+<body>
+  <script type="text/javascript">
+  var n,rem,rev=0;
+  n=123;
+  document.write("number is "+ n+"<br>"+"<br>");
+  while(n>0)
+{
+    rem=n%10;
+    rev=rev*10+rem;
+    n=parseInt(n/10);
+}
+document.write("reverse is "+ rev+"<br>"+"<br>");
+</script>
+</body>
+</html>
+
