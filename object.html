@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<!--creating object by literal -->
+<script>
+    emp={id:102,name:"PVS",salary:35000}
+    document.write(emp.id+" "+emp.name+" "+emp.salary)
+</script>
+
+<!--creating instance object.-->
+<script>
+    var emp=new Object();
+    emp.id=101;
+    emp.name="PVS";
+    emp.salary=50000;
+    document.write("<br></br>"+emp.id+" "+emp.name+" "+emp.salary)
+</script>
+
+<!--By using Object constructor-->
+<script>
+    function emp(id,name,salary){
+        this.id=id;
+        this.name=name;
+        this.salary=salary;
+    }
+    e=new emp(103,"vvs",100000);
+    document.write("<br></br>"+e.id+" "+e.name+" "+e.salary);
+</script>
+</html>
